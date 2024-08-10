@@ -40,7 +40,7 @@ pub async fn dcreate_endpoint(request: Request<Body>) -> Result<Response<Body>, 
     let _ = match create_dir_all(directory_path) {
         Ok(_) => {},
         Err(_) => {
-            return Ok(create_response("Directory creation failed.", Status::DIURECTORY_CREATION_FAILED))
+            return Ok(create_response("Directory creation failed.", Status::DIRECTORY_CREATION_FAILED))
         }
     };
 
