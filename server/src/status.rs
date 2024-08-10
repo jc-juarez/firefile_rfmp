@@ -38,4 +38,10 @@ impl Status {
 
     // Failed to create the specified file in the server filesystem.
     pub const FILE_CREATION_FAILED: StatusCode = 9007;
+
+    // Directory already exists in the server filesystem.
+    pub const DIRECTORY_ALREADY_EXISTS: StatusCode = 9008;
+
+    // Failed to create the specified directory in the server filesystem.
+    pub const DIURECTORY_CREATION_FAILED: StatusCode = 9009;
 }

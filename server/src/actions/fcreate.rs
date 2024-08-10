@@ -23,7 +23,7 @@ pub async fn fcreate_endpoint(request: Request<Body>) -> Result<Response<Body>, 
         Err(status) => return Ok(create_response("Failed to deserialize the request body.", status))
     };
 
-    // Check if the object has the expected field and extract it as a String
+    // Check if the object has the expected field.
     let file_path = match request_body.get(FCREATE_FILE_PATH_KEY) {
         Some(Value::String(file)) => file.clone(),
         _ => {
