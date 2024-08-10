@@ -44,4 +44,7 @@ impl Status {
 
     // Failed to create the specified directory in the server filesystem.
     pub const DIURECTORY_CREATION_FAILED: StatusCode = 9009;
+
+    // HTTP protocol error.
+    pub const HTTP_ERROR: StatusCode = 9010;
 }
